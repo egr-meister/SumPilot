@@ -106,9 +106,7 @@ room {
 
 // Fail any release packaging task early and loudly when release credentials are missing.
 tasks.configureEach {
-    val releaseTask = name.contains("Release") &&
-        (name.startsWith("assemble") || name.startsWith("bundle") || name.startsWith("package") ||
-            name.startsWith("sign") || name.startsWith("install"))
+    val releaseTask = name in setOf("assembleRelease", "bundleRelease", "packageRelease", "packageReleaseBundle", "signReleaseBundle", "installRelease", "validateSigningRelease")
     if (releaseTask) {
         doFirst {
             if (!hasReleaseSigning) {
