@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base window theme; Compose draws everything else. System bars stay visible. -->
+    <style name="Theme.SumPilot" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/sky</item>
+        <item name="android:colorPrimary">@color/teal</item>
+        <item name="android:colorAccent">@color/teal</item>
+    </style>
+
+    <!-- Launch screen: matches the app icon and background, shown only until the first frame. -->
+    <style name="Theme.SumPilot.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/sky</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.SumPilot</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sky">#FFE4F0FA</color>
+    <color name="navy">#FF213A5E</color>
+    <color name="teal">#FF1C7670</color>
+    <color name="teal_light">#FF5FB3AC</color>
+    <color name="yellow">#FFF3C34E</color>
+    <color name="cream">#FFFFF8E8</color>
+</resources>
